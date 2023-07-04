@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name = "popupView" extends = "Group">
+  <interface>
+    <field id = "focus" type = "boolean" alwaysnotify = "true" onChange = "onGetFocus"/>
+    <function name = "displayPopup"/>
+  </interface>
+
+  <children>
+    <Rectangle
+        id     = "background"
+        color = "0x000000"        
+        width  = "1920"
+        height = "1080"
+        opacity = "0.7"
+        translation ="[0,0]"/>
+
+    <Group id = "rectView" visible = "true" translation = "[559, 306]">
+
+    <Rectangle
+      	id = "rectBackground"
+       	color = "0x0a1117"
+       	width = "800"
+       	height = "468"
+       	translation ="[0,0]"/>
+
+    <Label 
+        id  = "titleLbl" 
+        font = "font:MediumBoldSystemFont"
+        translation = "[ 10, 100 ]" 
+        horizAlign = "center" 
+        vertAlign = "top"
+        width = "800" 
+        height = "0"
+        wrap  = "false"/>
+
+
+     <Button
+        id = "yesBtn"    
+        translation = "[92, 300]" 
+        minWidth = "300" 
+        maxWidth = "300" 
+        height = "84"
+        iconUri = ""
+        focusedIconUri = ""
+        focusBitmapUri = "pkg:/images/button/focused.png"
+        focusFootprintBitmapUri = "pkg:/images/button/unfocused.png"
+        showFocusFootprint = "true"/> 
+
+     <Label 
+        id = "yesBtnBtnLbl" 
+        font = "font:smallestSystemFont"
+        translation = "[92, 300]" 
+        horizAlign = "center"
+        vertAlign = "center"
+        wrap = "false" 
+        width = "300"
+        height = "84"
+        text = "YES"/>
+
+     <Button
+        id = "noBtn"    
+        translation = "[402, 300]" 
+        minWidth = "300" 
+        maxWidth = "300" 
+        height = "84"
+        iconUri = ""
+        focusedIconUri = ""
+        focusBitmapUri = "pkg:/images/button/focused.png"
+        focusFootprintBitmapUri = "pkg:/images/button/unfocused.png"
+        showFocusFootprint = "true"/> 
+
+      <Label 
+        id = "noBtnBtnLbl" 
+        font = "font:smallestSystemFont"
+        translation = "[402, 300]" 
+        horizAlign = "center"
+        vertAlign = "center"
+        wrap = "false" 
+        width = "300"
+        height = "84"
+        text = "NO"/>
+
+    </Group>
+  </children>
+  <script type = "text/brightscript" uri = "pkg:/components/views/popupView/popupView.brs"/>
+</component>
+

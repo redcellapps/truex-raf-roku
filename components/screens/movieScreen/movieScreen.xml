@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name = "movieScreen" extends = "Group">
+
+ <interface>
+    <field id = "focus" type = "boolean" alwaysnotify = "true" onChange = "onGetFocus"/>
+    <function name = "getCategories"/>
+    <function name = "showMenu"/>
+    <function name = "closeDetailsScreen"/>
+</interface>
+
+<children>
+
+
+    <Poster 
+        id = "landscapeImgLow" 
+        width = "1280" 
+        height = "720" 
+        uri = ""
+        translation = "[640, 0]"/>
+
+    <Poster 
+        id = "landscapeImgHigh" 
+        width = "1280" 
+        height = "720" 
+        uri = ""
+        translation = "[640, 0]" 
+        loadDisplayMode = "scaleToFit"
+        visible = "false"/>
+
+    <Poster 
+        id = "overlay" 
+    	width = "1920" 
+    	height = "1080" 
+    	translation = "[0, 0]"
+        uri = "pkg:/images/movieScreen/overlay.png" 
+        loadDisplayMode = "scaleToFit"/>
+
+     <Poster 
+        id = "watermarkLogo" 
+        width = "200" 
+        height= "37" 
+        uri = "pkg:/images/logo/watermarkLogo.png"
+        translation = "[1690, 30]"/>
+
+    <Label 
+        id = "nameLbl" 
+        font = "font:LargeBoldSystemFont"
+        translation = "[180, 140]" 
+        horizAlign = "left"
+        wrap = "false" 
+        vertAlign = "center"/>
+
+    <Label 
+        id = "descriptionLbl" 
+        font = "font:SmallestSystemFont"
+        translation = "[180, 240]" 
+        horizAlign = "left"
+        width = "1000" 
+        wrap = "true" 
+        maxLines  = "5"
+        color = "0xA9A9A9"
+        vertAlign = "center"/>
+
+    <RowList 
+        id = "rowList"
+        translation = "[180,550]"
+        itemComponentName = "rowItem" 
+        drawFocusFeedback = "false" 
+        rowFocusAnimationStyle = "floatingFocus"
+        vertFocusAnimationStyle = "fixedFocus"
+        showRowLabel = "true"
+        showRowCounter = "true"
+        rowLabelColor = "0xeee8dd"
+        rowLabelFont = "font:SmallestSystemFont"
+        rowLabelOffset = "[[0, 20]]"
+        focusXOffset = "0"
+        numRows = "2"
+        itemSize = "[1740, 376]"
+        rowItemSize = "[[240, 356]]"
+        itemSpacing = "[0, 50]"
+        rowItemSpacing = "[[12, 0]]"/>
+
+    <loadingIndicator   
+        id = "loadingIndicator"
+        visible = "false"
+        posY = "280"
+        overlayOpacity = "0.4"/>
+
+    <detailsScreen 
+        id = "detailsScreen"   
+        visible = "false"/>
+
+    <messageScreen
+      id = "messageScreen"
+      visible = "false"/>
+
+    </children>
+
+    <script type = "text/brightscript" uri = "pkg:/components/screens/movieScreen/movieScreen.brs"/>
+    <script type = "text/brightscript" uri = "pkg:/components/tasks/apiController/apiController.brs"/>
+    <script type = "text/brightscript" uri = "pkg:/components/utils/globalFunctions.brs"/>
+    <script type = "text/brightscript" uri = "pkg:/components/utils/parsingJson.brs"/>
+
+</component>

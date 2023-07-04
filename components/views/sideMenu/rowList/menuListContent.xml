@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name = "menuListContent" extends = "ContentNode">
+ 
+ <interface> 
+  <field id = "name"         type = "string"/>
+  <field id = "posterUrl"    type = "string"/>
+  <field id = "actionTarget" type = "string"/>
+  <field id = "selected"     type = "bool"/>
+</interface>
+</component>

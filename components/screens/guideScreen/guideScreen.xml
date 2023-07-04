@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name = "guideScreen" extends = "Group">
+
+	<interface>
+		<field id = "focus" type = "boolean" alwaysnotify = "true" onChange = "onGetFocus"/>
+	</interface>
+
+	<children>
+
+		<Label 
+        	id = "nameLbl" 
+        	font = "font:LargeBoldSystemFont"
+        	translation = "[115, 200]" 
+        	horizAlign = "left" 
+        	vertAlign = "top"
+        	text = "Guide"/>
+
+	</children>
+
+	<script type = "text/brightscript" uri = "pkg:/components/screens/guideScreen/guideScreen.brs"/>
+
+</component>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ 
+<component name = "rowItem" extends = "Group">
+ 
+<interface> 
+  <field id = "itemContent" type = "node" onChange = "onContentChange"/> 
+  <field id = "rowHasFocus" type  = "bool"  onChange  = "rowHasFocus" />
+  <field id = "focusPercent" type = "float" onChange  = "rowHasFocus"/>
+
+</interface>
+ 
+
+<children>
+
+  
+   <Poster 
+        id = "itemImage" 
+        translation = "[3,3]" 
+        width    = "234" 
+        height   = "350" 
+        loadDisplayMode = "scaleToFit"/>  
+
+     <Poster 
+        id = "maskImage" 
+        translation = "[0,0]" 
+        width    = "240" 
+        height   = "356" 
+        uri = "pkg:/images/rowItem/mask.png"
+        loadDisplayMode = "scaleToFit"/>       
+
+
+   <Poster
+     id = "imgFocused"
+     translation = "[0, 0]"
+     uri = "pkg:/images/rowItem/focused.png"
+     visible = "false"
+     width    = "240" 
+     height   = "356" 
+     loadDisplayMode = "scaleToFit"/>
+
+   <Label 
+      id = "nameLbl" 
+      font = "font:SmallestBoldSystemFont"
+      translation = "[10, 275]" 
+      horizAlign = "center" 
+      vertAlign  = "center"
+      width = "220" 
+      height = "0"
+      numLines = "2"
+      wrap = "true"/>
+
+
+    
+</children>
+
+<script type = "text/brightscript" uri = "pkg:/components/views/rowItem/rowItem.brs"/>
+
+</component>

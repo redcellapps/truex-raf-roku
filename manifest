@@ -1,0 +1,28 @@
+#  Copyright (c) 2021 FreebieTV. All rights reserved.
+#  Created on 25/05/2021 by Igor Malasevschi
+
+##   Channel Details
+title=FreebieTV
+major_version=2
+minor_version=1
+build_version=0
+
+supports_input_launch=1
+
+#bsprof_data_dest=0
+#bsprof_enable=0
+#bsprof_enable_mem=0
+
+##   Channel Assets
+mm_icon_focus_fhd=pkg:/images/appIcons/channel_poster_fhd.png
+mm_icon_focus_hd=pkg:/images/appIcons/channel_poster_hd.png
+mm_icon_focus_sd=pkg:/images/appIcons/channel_poster_sd.png
+
+splash_screen_fhd=pkg:/images/appIcons/splash_screen_fhd.png
+splash_screen_hd=pkg:/images/appIcons/splash_screen_hd.png
+splash_screen_sd=pkg:/images/appIcons/splash_screen_sd.png
+
+splash_min_time=0
+ui_resolutions=fhd
+bs_libs_required=roku_ads_lib
+debug=no

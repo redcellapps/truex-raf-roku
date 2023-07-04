@@ -1,0 +1,57 @@
+{
+   "settings":{
+      "host": "https://freebie.tv",
+      "apiUrl":"https://d2ixy28ujjzicy.cloudfront.net/api/v1",
+      "language":"EN",
+      "platform":"roku"
+   },
+
+   "ads": {
+      "midrollInterval": 900
+   },
+
+   "menuContent":{
+      "items":[
+         {
+            "id":"1",
+            "name":"Favorites",
+            "actionTarget":"favorites",
+            "imgUrl":"pkg:/images/menu/items/favorites.png",
+            "visible":true,
+            "selected":false
+         },
+         {
+            "id":"2",
+            "name":"Movies",
+            "actionTarget":"movies",
+            "imgUrl":"pkg:/images/menu/items/movies.png",
+            "visible":true,
+            "selected":true
+         },
+         {
+            "id":"3",
+            "name":"Live",
+            "actionTarget":"live",
+            "imgUrl":"pkg:/images/menu/items/live.png",
+            "visible":true,
+            "selected":false
+         },
+         {
+            "id":"4",
+            "name":"Guide",
+            "actionTarget":"guide",
+            "imgUrl":"pkg:/images/menu/items/guide.png",
+            "visible":false,
+            "selected":false
+         },
+         {
+            "id":"5",
+            "name":"Radio",
+            "actionTarget":"radio",
+            "imgUrl":"pkg:/images/menu/items/radio.png",
+            "visible":true,
+            "selected":false
+         }
+      ]
+   }
+}

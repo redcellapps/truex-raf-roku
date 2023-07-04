@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name = "playerScreen" extends = "Group">
+ <interface>
+   <field id = "focus" type = "boolean" alwaysnotify = "true" onChange = "onGetFocus"/>
+    <field id = "state" type = "string" alwaysnotify = "true"/>
+    <function name = "playStream"/>
+    <function name = "stopStream"/>
+    <function name = "setDetails"/>
+    <function name = "disableControls"/>
+</interface>
+    
+  <children>
+
+
+  <Video
+       id = "player"
+       width  = "1920"
+       height = "1080"
+       translation = "[0,0]"/>
+
+
+<Group id = "detailsOverlay" visible = "false">
+   <Poster 
+        id  = "overlay" 
+        width = "1920" 
+        height = "1080" 
+        uri = "pkg:/images/playerScreen/overlay.png"/>   
+
+    <Label 
+        id = "nameLbl" 
+        font = "font:LargeBoldSystemFont"
+        translation = "[147, 650]" 
+        horizAlign = "left"
+        wrap = "false" 
+        vertAlign = "center"/>
+
+
+   <Rectangle 
+        id = "progressBarBackground" 
+        width = "1626" 
+        height = "12" 
+        color = "0x525159"
+        opacity = "0.5"
+        translation = "[147, 780]"/>  
+        
+    <Rectangle 
+        id = "progressBar" 
+        width = "0" 
+        height = "12" 
+        color = "0x3997FC"
+        translation = "[147, 780]"/>   
+
+     <Label
+        id = "startTimeLbl"
+        font = "font:SmallestSystemFont"
+        translation = "[147, 815]"
+        horizAlign = "right"/>   
+
+     <Poster 
+        id = "seekFF" 
+        width = "50"
+        height = "50"
+        translation = "[136, 712]" 
+        uri = "pkg:/images/playerScreen/ff.png"
+        visible = "false"/>
+
+      <Poster 
+        id = "seekRew" 
+        width = "50"
+        height = "50"
+        translation = "[136, 712]" 
+        uri = "pkg:/images/playerScreen/rew.png"
+        visible = "true"/>
+
+      <Label
+        id = "speedLbl"
+        font = "font:SmallSystemFont"
+        width = "50"
+        translation = "[190, 720]"
+        horizAlign = "left"
+        vertAlign = "center" 
+        visible = "false"/>
+
+   
+  <Group id = "currentPosGroup" translation = "[-115, 765]">   
+
+     <Poster 
+          id = "currentUnfocusedPosThumb" 
+          width = "40"
+          height = "40"
+          translation = "[0, 0]" 
+          uri = "pkg:/images/playerScreen/unfocused.png"/>
+
+     <Poster 
+          id = "currentPosThumb" 
+          width = "40"
+          height = "40"
+          translation = "[0, 0]" 
+          uri = "pkg:/images/playerScreen/focused.png"/>
+
+
+ </Group>
+
+      <controlsView
+      id = "controlsView"/>
+
+   
+      <thumbnailsView
+      id = "thumbnailsView"
+      visible = "false"/>
+</Group>
+
+
+
+
+ <Timer
+    id = "checkStreamTimer"
+    repeat = "true"
+    duration = "1"/>
+
+ <loadingIndicator   
+    id = "loadingIndicator"
+    visible = "false"
+    posY = "280"
+    overlayOpacity = "0.4"/>   
+
+  <Label 
+    id = "errorLabel" 
+    font = "font:MediumSystemFont"
+    translation = "[80, 500]" 
+    horizAlign  = "center" 
+    vertAlign = "top"
+    width = "1760" 
+    height = "0"
+    wrap = "true"/>   
+
+  <Timer
+    id = "seekTimer"
+    repeat  = "true"
+    duration = "0.15"/>
+
+
+</children>
+    <script type = "text/brightscript" uri = "pkg:/components/screens/playerScreen/seek.brs"/>
+    <script type = "text/brightscript" uri = "pkg:/components/screens/playerScreen/playerScreen.brs"/>
+    <script type = "text/brightscript" uri = "pkg:/components/utils/globalFunctions.brs"/>
+    <script type = "text/brightscript" uri = "pkg:/components/tasks/bifManager/bifManager.brs"/>
+</component>

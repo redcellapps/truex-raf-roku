@@ -1,0 +1,144 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<component name = "sideMenu" extends = "Group">
+
+  <interface >
+    <field id = "focus" type = "boolean" alwaysnotify = "true" onChange = "onGetFocus"/>
+    <function name = "setMenuContent"/>
+    <function name = "getSelectedItem"/>
+    <function name = "showMenu"/>
+    <function name = "hideMenu"/>
+    
+   </interface>
+  <children >
+
+      <Timer
+       id = "focusTimer"
+       repeat = "false"
+       duration = "0.5"/>
+
+    
+      <Poster 
+          id = "bigOverlay" 
+          width = "500" 
+          height = "1080" 
+          uri = "pkg:/images/menu/bigOverlay.png"
+          translation = "[-500, 0]"/>
+
+  	 <RowList 
+        id = "menuList"
+        translation = "[-346,300]"
+        itemComponentName = "menuListItem" 
+
+        drawFocusFeedback = "false" 
+        rowFocusAnimationStyle = "floatingFocus"
+        vertFocusAnimationStyle = "floatingFocus"
+        showRowLabel    = "false"
+        showRowCounter  = "false"
+        rowLabelColor = "0xa0b033"
+        numRows  = "10"
+        itemSize = "[346, 84]"
+        rowItemSize = "[[346, 84]]"
+        itemSpacing = "[0, 0]"
+        rowItemSpacing = "[[0, 0]]"/>
+
+     <RowList 
+        id = "iconList"
+        translation = "[0,300]"
+        itemComponentName = "iconListItem" 
+
+        drawFocusFeedback = "false" 
+        rowFocusAnimationStyle = "floatingFocus"
+        vertFocusAnimationStyle = "floatingFocus"
+      
+        showRowLabel = "false"
+        showRowCounter = "false"
+        rowLabelColor = "0xa0b033"
+        numRows = "10"     
+        itemSize = "[148, 84]"   
+        rowItemSize = "[[148, 84]]"
+        itemSpacing = "[0, 0]"
+        rowItemSpacing = "[[0, 0]]"/>
+
+      <Poster 
+          id = "logo" 
+          width = "279" 
+          height= "51" 
+          uri = "pkg:/images/logo/logo.png"
+          translation = "[50, 130]"
+          opacity = "0"/>
+
+   
+
+
+    <SequentialAnimation id = "showAnimation">
+
+      <Animation 
+      duration = "0.3" 
+      easeFunction = "inExpo">
+
+        <Vector2DFieldInterpolator 
+          key = "[ 0.0, 1.0 ]" 
+          keyValue = "[ [-500, 0], [0, 0]]" 
+          fieldToInterp = "bigOverlay.translation"/>
+      </Animation>
+
+      <Animation 
+        duration = "0.1" 
+        easeFunction = "outExpo">
+
+        <FloatFieldInterpolator 
+           key = "[ 0.0,  1.0 ]" 
+           keyValue = "[ 0.0, 1.0 ]" 
+           fieldToInterp = "logo.opacity"/>
+      </Animation>
+
+      <Animation 
+         duration = "0.3" 
+         easeFunction = "outExpo">
+
+        <Vector2DFieldInterpolator 
+          key = "[ 0.0, 1.0 ]" 
+          keyValue = "[[-346, 300], [25, 300]]" 
+          fieldToInterp = "menuList.translation"/>
+      </Animation>
+    </SequentialAnimation>
+
+    <SequentialAnimation id = "hideAnimation">
+
+      <Animation 
+      duration = "0.1" 
+      easeFunction = "inExpo">
+
+        <Vector2DFieldInterpolator 
+          key = "[0.0, 1.0]" 
+          keyValue = "[[25, 300], [-346, 300]]" 
+          fieldToInterp = "menuList.translation"/>
+      </Animation>
+
+      <Animation 
+        duration = "0.1" 
+        easeFunction = "inExpo">
+
+        <FloatFieldInterpolator 
+         key = "[ 0.0,  1.0 ]" 
+         keyValue = "[1.0, 0.0]" 
+         fieldToInterp = "logo.opacity"/>
+      </Animation>
+
+
+      <Animation 
+      duration = "0.1" 
+      easeFunction = "outCubic">
+
+        <Vector2DFieldInterpolator 
+          key = "[ 0.0, 1.0 ]" 
+          keyValue = "[ [0, 0], [-500, 0]]" 
+          fieldToInterp = "bigOverlay.translation" />
+      </Animation>
+    </SequentialAnimation>
+
+  </children>
+  
+  <script type = "text/brightscript" uri = "pkg:/components/views/sideMenu/sideMenu.brs"/>
+</component>

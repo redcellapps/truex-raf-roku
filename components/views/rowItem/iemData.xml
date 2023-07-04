@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ 
+<component name = "itemData" extends = "ContentNode">
+ 
+<interface> 
+  <field id = "name" type = "string" />
+  <field id = "categoryID" type = "integer"/>
+  <field id = "itemID" type = "integer"/>
+  <field id = "itemType" type = "string"/>
+  <field id = "description" type = "string"/>
+  <field id = "portraitImg" type = "string"/>
+  <field id = "landscapeImgLow" type = "string"/>
+  <field id = "landscapeImgHigh" type = "string"/>
+  <field id = "displayName" type = "boolean" value = "false"/>
+</interface>
+
+</component>
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  

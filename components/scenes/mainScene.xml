@@ -1,0 +1,75 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<component name = "mainScene" extends = "Scene">
+
+<interface> 
+     <field id = "exitApp" type = "boolean" alwaysnotify = "true" value = "false"/>
+     <function name = "setAction"/>
+     <function name = "showMenu"/>
+     <function name = "hideMenu"/>
+     <function name = "closeLoadingScreen"/>
+     <function name = "closePopupScreen"/>
+     <function name = "closeDeepLinkScreen"/>
+
+</interface>
+<children>
+
+ <Poster 
+    id = "background" 
+    width = "1920" 
+    height = "1080" 
+    uri  = "pkg:/images/mainScene/background.png"
+    visible = "true"/>		
+
+  <favoritesScreen
+    id = "favoritesScreen"
+    visible = "false"/>
+
+   <movieScreen
+    id = "movieScreen"
+    visible = "false"/>   
+
+   <liveScreen
+    id = "liveScreen"
+    visible = "false"/>  
+
+   <guideScreen
+    id = "guideScreen"
+    visible = "false"/>  
+
+  <radioScreen
+    id = "radioScreen"
+    visible = "false"/>
+
+  <sideMenu
+    id = "sideMenu"
+    visible = "false"/>
+
+
+ <deeplLinkScreen
+  id = "deeplLinkScreen"
+  visible = "false"/>
+
+  <messageScreen
+      id = "messageScreen"
+      visible = "false"/>
+
+   <popupView
+        id = "popupView"
+        visible = "false"/>   
+
+  <loadingScreen
+      id = "loadingScreen"
+      visible = "false"/>
+
+
+</children>
+  
+<script type = "text/brightscript" uri = "pkg:/components/scenes/mainScene.brs"/>
+<script type = "text/brightscript" uri = "pkg:/components/tasks/configController/configController.brs"/>
+<script type = "text/brightscript" uri = "pkg:/components/tasks/regController/regController.brs"/>
+<script type = "text/brightscript" uri = "pkg:/components/utils/globalFunctions.brs"/>
+<script type = "text/brightscript" uri = "pkg:/components/utils/localization.brs"/>
+
+  
+</component>
+

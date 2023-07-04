@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<component name = "loadingIndicator" extends = "Group">
+
+  <interface >
+    <field id = "control" type = "string" onChange = "onControlChange"/>
+    <field id = "overlayOpacity" type = "float"  alias = "background.opacity" value = "0"/>
+    <field id = "posY" type = "float" onChange = "updateLayout"/>
+  </interface>
+
+  <children >
+
+   <timer
+       id = "loadingTimer"
+       repeat = "true"
+       duration = "0.5"/>  
+
+    <Rectangle
+      id = "background" 
+       width  = "1920" 
+       height = "1080"
+       color = "0x000000"/>
+
+
+   <Group id = "bulletsGroup"   visible = "true" translation = "[0, 0]">
+     
+   </Group>
+
+    <Group id = "bulletsFocusedGroup"   visible = "true" translation = "[0, 0]">
+    </Group>
+
+  </children>
+
+  <script type = "text/brightscript" uri = "pkg:/components/views/loadingIndicator/loadingIndicator.brs"/>
+
+</component>

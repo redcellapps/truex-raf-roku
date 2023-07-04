@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<component name = "messageScreen" extends = "Group">
+
+  <interface>
+    <field id = "height" type = "float" value = "1080" onChange = "updateLayout"/>
+    <field id = "width" type = "float" value = "1920" onChange = "updateLayout"/>
+    <field id = "focus" type = "boolean" alwaysnotify = "true" onChange = "onGetFocus"/>
+    <function name = "displayErrorMessage" />
+  </interface>
+
+  <children>
+
+    <Rectangle 
+          id  = "background" 
+          width = "1920" 
+          height = "1080" 
+          color = "0x05080b"
+          translation = "[0, 0]"/>
+
+     <Poster 
+        id = "watermarkLogo" 
+        width = "200" 
+        height= "37" 
+        uri = "pkg:/images/logo/watermarkLogo.png"
+        translation = "[1690, 30]"
+        visible = "true"/>
+
+    <Label 
+          id = "errorLabel" 
+          font = "font:MediumSystemFont"
+          translation = "[ 0, 540 ]" 
+          horizAlign = "center" 
+          vertAlign = "top"
+          width = "1920" 
+          height = "0"
+          wrap = "true"/>
+  
+  
+  </children>
+
+  <script type = "text/brightscript" uri = "pkg:/components/screens/messageScreen/messageScreen.brs"/>
+</component>

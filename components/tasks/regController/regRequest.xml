@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name = "regRequest" extends = "Task">
+  <interface>
+    
+    <field id = "response" type = "assocarray"/>
+    <field id = "functionName" type = "string"/>
+   	<field id = "request"  type = "assocarray" />
+  </interface>
+
+  <script type = "text/brightscript" uri = "pkg:/components/tasks/regController/regRequest.brs"/>
+  <script type = "text/brightscript" uri = "pkg:/components/utils/globalFunctions.brs"/>
+</component>

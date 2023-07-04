@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ 
+<component name = "detailsScreen" extends = "Group">
+ 	
+<interface> 
+	<field id = "focus" type = "boolean" alwaysnotify = "true" onChange = "onGetFocus"/>
+    <function name = "setDetails"/>
+    <function name = "closePlayerScreen"/>
+    <function name = "getNextMediaItem"/>
+    <function name = "getPreviousMediaItem"/>
+    
+</interface>
+ 
+
+<children>
+    <Poster 
+        id = "background" 
+        width = "1920" 
+        height = "1080" 
+        uri  = "pkg:/images/mainScene/background.png"/>      
+
+    <Poster 
+        id = "landscapeImgLow" 
+        width = "1280" 
+        height = "720" 
+        uri = ""
+        translation = "[640, 0]" 
+        loadDisplayMode = "scaleToFit"/>
+
+
+    <Poster 
+        id = "landscapeImgHigh" 
+        width = "1280" 
+        height = "720" 
+        uri = ""
+        translation = "[640, 0]" 
+        loadDisplayMode = "scaleToFit"/>
+
+
+    <Poster 
+        id = "overlay" 
+        width = "1920" 
+        height = "1080" 
+        translation = "[0, 0]"
+        uri = "pkg:/images/movieScreen/overlay.png"/>
+
+      <Poster 
+        id = "watermarkLogo" 
+        width = "200" 
+        height= "37" 
+        uri = "pkg:/images/logo/watermarkLogo.png"
+        translation = "[1690, 30]"/>
+
+    <Label 
+        id = "nameLbl" 
+        font = "font:LargeBoldSystemFont"
+        translation = "[180, 140]" 
+        horizAlign = "left"
+        wrap = "false" 
+        vertAlign = "center"/>
+
+      <Label 
+        id = "durationLbl" 
+        font = "font:SmallestSystemFont"
+        translation = "[180, 200]" 
+        horizAlign = "left"
+        color = "0xE0E0E0"
+        vertAlign = "center"/>
+
+      <Label 
+        id = "descriptionLbl" 
+        font = "font:SmallestSystemFont"
+        translation = "[180, 250]" 
+        horizAlign = "left"
+        width = "1000" 
+        wrap = "true" 
+        maxLines  = "5"
+        color = "0xA9A9A9"
+        vertAlign = "center"/>
+    
+    <Button
+        id = "playBtn"    
+        translation = "[180, 476]" 
+        minWidth = "300" 
+        maxWidth = "300" 
+        height = "84"
+        iconUri = ""
+        focusedIconUri = ""
+        focusBitmapUri = "pkg:/images/detailsScreen/play_focused.png"
+        focusFootprintBitmapUri = "pkg:/images/detailsScreen/play_unfocused.png"
+        showFocusFootprint = "true"/> 
+  
+     <Label 
+        id = "playBtnLbl" 
+        font = "font:smallestSystemFont"
+        translation = "[200, 478]" 
+        horizAlign = "center"
+        vertAlign = "center"
+        wrap = "false" 
+        width = "280"
+        height = "84"/>
+
+      <Button
+        id = "resumeBtn"    
+        translation = "[468, 476]" 
+        minWidth = "370" 
+        maxWidth = "370" 
+        height = "84"
+        iconUri = ""
+        focusedIconUri = ""
+        focusBitmapUri = "pkg:/images/detailsScreen/resume_playing_focused.png"
+        focusFootprintBitmapUri = "pkg:/images/detailsScreen/resume_playing_unfocused.png"
+        showFocusFootprint = "true"/>     
+  
+
+       <Label 
+        id = "resumeBtnLbl" 
+        font = "font:smallestSystemFont"
+        translation = "[504, 478]" 
+        horizAlign = "center"
+        vertAlign = "center"
+        wrap = "false" 
+        width = "340"
+        text = "Resume Watching"
+        height = "84"/>
+
+      <Button
+        id = "favoritesBtn"    
+        translation = "[480, 459]" 
+        minWidth = "99" 
+        maxWidth = "99" 
+        height = "99"
+        iconUri = ""
+        focusedIconUri = ""
+        focusBitmapUri = "pkg:/images/detailsScreen/favorites_add_focused.png"
+        focusFootprintBitmapUri = "pkg:/images/detailsScreen/favorites_add.png"
+        showFocusFootprint = "true"/> 
+
+     <RowList 
+        id = "rowList"
+        translation = "[180,650]"
+        itemComponentName = "rowItem" 
+        drawFocusFeedback = "false" 
+        rowFocusAnimationStyle = "floatingFocus"
+        vertFocusAnimationStyle = "fixedFocus"
+        showRowLabel = "true"
+        showRowCounter = "false"
+        rowLabelColor = "0xeee8dd"
+        rowLabelFont = "font:SmallestSystemFont"
+        rowLabelOffset = "[[0, 20]]"
+        focusXOffset = "0"
+        numRows = "1"
+        itemSize = "[1740, 376]"
+        rowItemSize = "[[240, 356]]"
+        itemSpacing = "[0, 50]"
+        rowItemSpacing = "[[12, 0]]"
+        visible = "false"/>
+
+     <playerScreen
+       id = "playerScreen"
+       visible = "false"/>
+
+    <loadingIndicator   
+        id = "loadingIndicator"
+        visible = "false"
+        posY = "280"
+        overlayOpacity = "0.4"/>
+    
+</children>
+
+<script type = "text/brightscript" uri = "pkg:/components/screens/detailsScreen/detailsScreen.brs"/>
+<script type = "text/brightscript" uri = "pkg:/components/utils/globalFunctions.brs"/>
+<script type = "text/brightscript" uri = "pkg:/components/utils/bookMark.brs"/>
+<script type = "text/brightscript" uri = "pkg:/components/tasks/apiController/apiController.brs"/>
+<script type = "text/brightscript" uri = "pkg:/components/tasks/regController/regController.brs"/>
+</component>

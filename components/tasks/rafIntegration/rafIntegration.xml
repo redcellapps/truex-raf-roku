@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name = "rafIntegration" extends = "Task">
+  <interface>
+    <field id = "video" type = "node"/>
+    <field id = "prerrolAdUrl" type = "string"/>
+    <field id = "midrollAdUrl" type = "string"/>
+    <field id = "contentID" type = "integer"/>
+    <field id = "duration" type = "integer"/>
+    <field id = "name" type = "string"/>
+    <field id = "seekPos" type = "integer"/>
+    <field id = "keepPlaying" type = "boolean"/>
+    <field id = "displayPrerollAd" type = "boolean" value = "false"/>
+    
+  </interface>
+
+  <script type = "text/brightscript" uri = "pkg:/components/tasks/rafIntegration/rafIntegration.brs"/>
+  <script type = "text/brightscript" uri = "pkg:/components/utils/globalFunctions.brs"/>
+
+</component>

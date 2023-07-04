@@ -1,0 +1,6 @@
+# System files
+.DS_store
+
+# VSCode files
+/dist
+/out

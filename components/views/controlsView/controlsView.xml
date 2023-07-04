@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name = "controlsView" extends = "Group">
+ <interface>
+   <field id = "focus" type = "boolean" alwaysnotify = "true" onChange = "onGetFocus"/>
+   <field id = "state" type = "string" alwaysnotify = "true" onChange = "onPlayerStateChange"/>
+   <field id = "buttonSelected" type = "integer" alwaysnotify = "true"/>
+   <field id = "buttonFocused" type = "boolean" alwaysnotify = "true"/>
+   <field id = "disabledControls" type = "boolean" onChange = "disableControls" alwaysnotify = "true"/>
+
+   <function name = "setLiveButtons"/>
+   <function name = "setMovieButtons"/>
+   
+</interface>
+    
+<children>
+
+ <Poster 
+        id = "unfocusedRewThumb" 
+        width = "100"
+        height = "100"
+        translation = "[805, 840]" 
+        uri = "pkg:/images/controlsView/unfocused.png"
+        visible = "true"/>       
+ 
+   <Poster 
+        id = "focusedRewThumb" 
+        width = "100"
+        height = "100"
+        translation = "[805, 840]" 
+        uri = "pkg:/images/controlsView/focused.png"
+        visible = "false"/>   
+
+  <Poster 
+        id = "unfocusedCenterThumb" 
+        width = "140"
+        height = "140"
+        translation = "[890, 820]" 
+        uri = "pkg:/images/controlsView/unfocused.png"
+        visible = "true"/>   
+  <Poster 
+        id = "focusedCenterThumb" 
+        width = "140"
+        height = "140"
+        translation = "[890, 820]" 
+        uri = "pkg:/images/controlsView/focused.png"
+        visible = "false"/>   
+        
+   <Poster 
+        id = "unfocusedFFThumb" 
+        width = "100"
+        height = "100"
+        translation = "[1015, 840]" 
+        uri = "pkg:/images/controlsView/unfocused.png"
+        visible = "true"/>   
+
+    <Poster 
+        id = "focusedFFThumb" 
+        width = "100"
+        height = "100"
+        translation = "[1015, 840]" 
+        uri = "pkg:/images/controlsView/focused.png"
+        visible = "false"/>   
+
+     <Poster 
+        id = "rewThumb" 
+        width = "40"
+        height = "25"
+        translation = "[831, 878]" 
+        uri = "pkg:/images/controlsView/rew.png"
+        visible = "false"/>     
+
+     <Poster 
+        id = "previousThumb" 
+        width = "28"
+        height = "25"
+        translation = "[840, 878]" 
+        uri = "pkg:/images/controlsView/previous.png"
+        visible = "false"/>     
+    
+
+    <Poster 
+        id = "pauseThumb" 
+        width = "17"
+        height = "36"
+        translation = "[952, 872]" 
+        uri = "pkg:/images/controlsView/pause.png"
+        visible = "false"/>
+
+     <Poster 
+        id = "playThumb" 
+        width = "24"
+        height = "36"
+        translation = "[953, 872]" 
+        uri = "pkg:/images/controlsView/play.png"
+        visible = "true"/>     
+
+      <Poster 
+        id = "ffThumb" 
+        width = "40"
+        height = "25"
+        translation = "[1049, 878]" 
+        uri = "pkg:/images/controlsView/ff.png"
+        visible = "false"/>   
+
+     <Poster 
+        id = "nextThumb" 
+        width = "28"
+        height = "25"
+        translation = "[1052, 878]" 
+        uri = "pkg:/images/controlsView/next.png"
+        visible = "false"/>   
+
+    
+
+
+</children>
+    <script type = "text/brightscript" uri = "pkg:/components/views/controlsView/controlsView.brs"/>
+    <script type = "text/brightscript" uri = "pkg:/components/utils/globalFunctions.brs"/>
+</component>

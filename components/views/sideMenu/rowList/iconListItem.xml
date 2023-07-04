@@ -1,0 +1,34 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name = "IconListItem" extends = "Group">
+
+  <interface >
+    <field id = "itemContent" type = "node" onChange  = "itemContentChanged"/>
+  </interface>
+
+  <children >
+
+    <Rectangle 
+        id  = "background" 
+        width = "90" 
+        height = "84" 
+        color = "0x0183cc"
+        translation = "[0, 0]" 
+        visible = "false" />
+
+    <Poster 
+        id = "itemSelected" 
+        width = "6" 
+        height = "60" 
+        uri = "pkg:/images/menu/iconListSelected.png"
+        visible  = "false" 
+        translation = "[10, 12]"/>
+
+    <Poster 
+        id = "itemIcon" 
+        translation = "[60, 24]" 
+        width    = "36" 
+        height   = "36"/>
+  </children>
+
+  <script type = "text/brightscript" uri = "pkg:/components/views/sideMenu/rowList/iconListItem.brs"/>
+</component>

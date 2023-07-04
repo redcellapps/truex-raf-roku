@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name = "thumbnailsView" extends = "Group">
+ <interface>
+     <function name = "clearSeekThumbs"/>
+     <function name = "fillSeeks"/>
+     
+     
+</interface>
+    
+<children>
+ <Group id = "seekOverlay" visible = "true" translation = "[0, 0]" clippingRect = "[0, 0, 1920, 1080]">
+      <Poster 
+        id = "seek1" 
+        width = "312" 
+        height = "175"
+        translation = "[96, 374]" 
+        uri = "pkg:/images/thumbnailsView/black_rectangle.png"
+        opacity = "0.8"/>
+
+    <Poster 
+        id = "seek2" 
+        width = "312" 
+        height = "175"
+        translation = "[420, 374]" 
+        uri = "pkg:/images/thumbnailsView/black_rectangle.png"
+        opacity = "0.8"/>
+    
+    <Poster 
+        id = "seek3" 
+        width  = "430" 
+        height = "242"
+        translation = "[745, 341]" 
+        uri = "pkg:/images/thumbnailsView/black_rectangle.png"
+        opacity = "0.8"/>
+
+      <Poster 
+        id = "whiteView" 
+        width  = "430" 
+        height = "242"
+        translation = "[745, 341]" 
+        uri = "pkg:/images/thumbnailsView/seek_border.png"
+        opacity = "1.0"/>
+   
+     <Poster 
+        id = "seek4" 
+        width  = "312" 
+        height = "175"
+        translation = "[1188, 374]" 
+        uri = "pkg:/images/thumbnailsView/black_rectangle.png"
+        opacity = "0.8"/>
+
+     <Poster 
+        id = "seek5" 
+        width  = "312" 
+        height = "175"
+        translation = "[1512, 374]" 
+        uri = "pkg:/images/thumbnailsView/black_rectangle.png"/>
+   </Group>
+ 
+
+</children>
+    <script type = "text/brightscript" uri = "pkg:/components/views/thumbnailsView/thumbnailsView.brs"/>
+</component>

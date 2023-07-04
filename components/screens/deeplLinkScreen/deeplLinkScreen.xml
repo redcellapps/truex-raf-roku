@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<component name = "deeplLinkScreen" extends = "Group">
+
+  <interface >
+	<function name = "getItem"/>
+  <function name = "closePlayerScreen"/>
+   
+  </interface>
+
+  <children >
+
+
+   <playerScreen
+       id = "playerScreen"
+       visible = "false"/>
+
+    <messageScreen
+      id = "messageScreen"
+      visible = "false"/>     
+ 
+  </children>
+
+ <script type = "text/brightscript" uri = "pkg:/components/screens/deeplLinkScreen/deeplLinkScreen.brs"/>
+ <script type = "text/brightscript" uri = "pkg:/components/tasks/apiController/apiController.brs"/>
+ <script type = "text/brightscript" uri = "pkg:/components/utils/globalFunctions.brs"/>
+</component>

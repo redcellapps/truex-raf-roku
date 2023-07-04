@@ -1,0 +1,38 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<component name = "MenuListItem" extends = "Group">
+   <interface >
+      <field id = "itemContent" type  = "node" onChange = "itemContentChanged"/>
+      <field id = "rowHasFocus" type  = "bool" onChange = "rowHasFocus" />
+      <field id = "focusPercent" type = "float" onChange = "rowHasFocus"/>
+      <field id = "rowFocusPercent" type = "float" alwaysnotify = "false" onChange = "rowFocusPercentChanged"/>
+   </interface>
+   <children >
+      <Rectangle 
+          id = "background" 
+          width = "346" 
+          height = "84" 
+          color = "0x263238"
+          translation = "[0, 0]" 
+          visible = "false"/>
+          
+      <Poster 
+          id = "itemSelected" 
+          translation = "[0, 0]" 
+          width = "346" 
+          height = "84" 
+          uri = "pkg:/images/menu/menuListSelected.png"
+          visible = "false"/>
+
+      <Label 
+        id = "itemLabel" 
+        font = "font:SmallestSystemFont"
+        translation = "[94, 0]" 
+        horizAlign = "left" 
+        vertAlign = "center"
+        width = "250" 
+        height = "84"
+        numLines = "1"
+        wrap = "false"/>
+   </children>
+   <script type ="text/brightscript" uri="pkg:/components/views/sideMenu/rowList/MenuListItem.brs"/>
+</component>
