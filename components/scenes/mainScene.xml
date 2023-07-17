@@ -13,6 +13,9 @@
 </interface>
 <children>
 
+<!-- See MainScene::init() to get an idea of the library loading process. -->
+<ComponentLibrary id="TruexAdRendererLib" uri="https://ctv.truex.com/roku/v1/release/TruexAdRenderer-Roku-v1.pkg"/>
+
  <Poster 
     id = "background" 
     width = "1920" 

@@ -9,7 +9,12 @@ end sub
 
 '=========== URL GET REQUEST ================='
 sub get()
-  url = m.top.url
+  #if vscode_proxy
+    url = urlProxy(m.top.url)
+  #else
+    url = m.top.url
+  #end if
+
   port = CreateObject("roMessagePort")
   request = CreateObject("roUrlTransfer")
   request.SetMessagePort(port)
@@ -40,7 +45,29 @@ sub get()
   end if
 end sub
 
+function urlProxy(url as string) as string
+  if left(url, 4) <> "http" then return url
+  ' This address is <HOST_RUNNING_CHARLES>:<CHARLES_PORT>
+  proxyAddress = "192.168.0.113:8888"
 
+  ' Make sure we have not already formatted this url
+  ' This can lead to a recursive address
+  if not url.inStr(proxyAddress) > -1 then
+    if url <> invalid and proxyAddress <> invalid
+      proxyPrefix = "http://" + proxyAddress + "/;"
+      currentUrl = url
 
+      ' Double check again. You really don't want a recursive address
+      if currentUrl.inStr(proxyPrefix) = 0 then
+        return url
+      end if
 
+      ' Combine the addresses together resulting in the following format:
+      ' <HOST_RUNNING_CHARLES>:<CHARLES_PORT>;<ORIGINAL_ADDRESS>
+      proxyUrl = proxyPrefix + currentUrl
+      return proxyUrl
+    end if
+  end if
 
+  return url
+end function

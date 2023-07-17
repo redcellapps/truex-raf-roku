@@ -1,6 +1,9 @@
 # System files
 .DS_store
+.vscode
 
 # VSCode files
 /dist
 /out
+
+.env

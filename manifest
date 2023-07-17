@@ -26,3 +26,5 @@ splash_min_time=0
 ui_resolutions=fhd
 bs_libs_required=roku_ads_lib
 debug=no
+
+bs_const=debug=true;vscode_proxy=false

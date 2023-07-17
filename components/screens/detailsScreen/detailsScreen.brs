@@ -268,6 +268,8 @@ end sub
 
 '=========== PLAY MEDIA ITEM ========='
 sub playMediaItem()
+	?"****** detailsScreen ****** playMediaItem() -----> "
+  ' stop
   mediaItem = {
     name: m.nameLbl.text,
     mediaSource: m.mediaSource,

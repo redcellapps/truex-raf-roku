@@ -1,0 +1,1173 @@
+{
+   "tag_type": "choice_card",
+   "user": {
+      "id": "5a4e75d1-2e85-5b2d-97b9-6e4244c90b86"
+   },
+   "partner_dimensions": {
+      "dimension_1": null,
+      "dimension_2": "0",
+      "dimension_3": null,
+      "dimension_4": null,
+      "dimension_5": "evergreen"
+   },
+   "placement": {
+      "id": "874",
+      "partner_id": "216",
+      "identifier_hash": "74fca63c733f098340b0a70489035d683024440d"
+   },
+   "ads": [
+      {
+         "id": 20975,
+         "campaign_id": 25775,
+         "name": "Reference App Roku TAR - Evergreen Test SVNRE",
+         "image_url": "https://s3.amazonaws.com/media.socialvi.be/assets/17190/gen-124x124.jpg?1362613767",
+         "display_text": null,
+         "window_url": "https://engage.truex.com/engage?campaign_id=25775&creative_id=20975&ctv=1&currency_amount=1&env%5B%5D=layoutJSON&flag=%2Bamcb%2Bemcr%2Bslcb%2Bvicb%2Baeti-exvt&impression_signature=91469b3f64760e91359a7892518733b47fc96f99eeb28a9fe6653eac3bd58bbb&impression_timestamp=1659476286.7151043&initials=5&internal_referring_source=u-Ii_RwPS9SjnYLm5ppzzA&ip=24.85.14.83&metr=0&multivariate%5BFAP-460%5D=oldTT&multivariate%5Bctv_footer_test%5D=T0&multivariate%5Bctv_footer_test_a744dee4c7908c475fd3920ac6616470c4317e8c%5D=T0&multivariate%5Bctv_footer_test_dbd6f9f154dc39f9fc4888317c6e3c9d74f7c971%5D=T0&multivariate%5Bctv_relevance_enabled%5D=T0&multivariate%5Btruex_first_experiment%5D=control&multivariate%5Btvml_cc_test%5D=control&network_user_id=5a4e75d1-2e85-5b2d-97b9-6e4244c90b86&optimized=true&placement_hash=74fca63c733f098340b0a70489035d683024440d&prof=g_as3_truex&ptgt=a&resp=vmap1&session_id=DBQksMsbTLOMTT9ySEvh-w&slid=fw_truex&stream_position=preroll&timezone_offset=8.0&user_agent=Mozilla%2F5.0+%28Macintosh%3B+Intel+Mac+OS+X+10_15_7%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F103.0.0.0+Safari%2F537.36&vault=0-29zm1jWxMEz-pBYDmYax6wy2kMn1yuixFR2nKE2yNftYeyfw9BcDPUjcnjFW98zrZZKNUTWAWUbvQPM4Ti6NTFHsepNjH7ofFVNDuu5T2mgqC5RTdNxz6YB4cwtTb4qwKN1v9qdm5c1vN4hqMZA6PQnp4WLCU7yQudfmQ2EQ4brUtb14xCaBYnWwbiK&bid_info=0-fNGntYZJrGp-4RTgfEMkwAhDKkg88khkfgaZ42cpLGviXeXTfRViCacfuQt75JP6THFVatVL2J1K8p3mZVBVro23B4Qm3SABJVFkdQauJC5ZFbpnbvnLkn4HfacikpHedTtmWqfwJBpkpUajT1Tmoda23doRb9KgDBxpWtmdDPrx5rDeudLHe3m6NkT5HhQZJNCxTQWQaonxpww3LRLFSc4hSeRvNFX2bUmT7fXrLuVVeAPXXY3qaZtotdSvk",
+         "window_width": 1920,
+         "window_height": 1120,
+         "currency_amount": 1,
+         "revenue_amount": "0.0",
+         "partner_id": 216,
+         "variations": {
+            "truex_first_experiment": "control",
+            "FAP-460": "oldTT",
+            "tvml_cc_test": "control",
+            "ctv_footer_test": "T0",
+            "ctv_footer_test_a744dee4c7908c475fd3920ac6616470c4317e8c": "T0",
+            "ctv_footer_test_dbd6f9f154dc39f9fc4888317c6e3c9d74f7c971": "T0",
+            "ctv_relevance_enabled": "T0"
+         },
+         "choice_card_images": [],
+         "asset_url": "rokulayoutjson.tv",
+         "asset_type": "layoutJSON",
+         "asset_args": {
+            "studio_customization": {
+               "custom_tab": "layoutJSON",
+               "custom_js": "//media.truex.com/studio/1.0/templates/layoutJSON_template.js"
+            },
+            "steps": [
+               {
+                  "name": "main_card",
+                  "elements": [
+                     {
+                        "type": "Button",
+                        "name": "continue",
+                        "x": "1",
+                        "y": "1",
+                        "width": "1",
+                        "height": "1",
+                        "opacity": 1,
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/5a4c9034-00e0-4c24-8915-eaaf0d64b1ad.png",
+                        "hover_effect": false
+                     },
+                     {
+                        "__comment__": "Fullscreen Video Continue Panel",
+                        "name": "Panel_FullscreenVideoContinue",
+                        "type": "Image",
+                        "x": "0",
+                        "y": "0",
+                        "width": "1920",
+                        "height": "1080",
+                        "image_url": "",
+                        "opacity": "0"
+                     },
+                     {
+                        "__comment__": "Intro Video",
+                        "type": "Video",
+                        "name": "intro_video",
+                        "x": "0",
+                        "y": "0",
+                        "width": "1920",
+                        "height": "1080",
+                        "video_url": "https://media.truex.com/video_assets/2020-12-09/149e5883-ab76-4e92-adf7-64c6fa513bf7_ottPreset.mp4",
+                        "loop": false,
+                        "preview_image_url": "",
+                        "autoplay": true
+                     }
+                  ],
+                  "behaviors": {
+                     "intro_video": {
+                        "videoCompleted": [
+                           {
+                              "host": "replaceStep",
+                              "cardName": "panel_1"
+                           }
+                        ]
+                     },
+                     "continue": {
+                        "onselect": [
+                           {
+                              "host": "replaceStep",
+                              "cardName": "panel_1"
+                           }
+                        ]
+                     }
+                  }
+               },
+               {
+                  "name": "panel_1",
+                  "elements": [
+                     {
+                        "__comment__": "QR hidden button, will show qrcode on focus. Set focusable to false if no QR code page",
+                        "name": "Button_QR",
+                        "type": "Button",
+                        "x": "953",
+                        "y": "0",
+                        "width": "20",
+                        "height": "20",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/5a4c9034-00e0-4c24-8915-eaaf0d64b1ad.png",
+                        "focusable": true,
+                        "hover_effect": false,
+                        "leftFocus": "Button_Main",
+                        "rightFocus": "Button_Main",
+                        "downFocus": "Button_Main"
+                     },
+                     {
+                        "__comment__": "Left Hidden Button, will replaceStep onFocusGained",
+                        "name": "Button_Left",
+                        "type": "Button",
+                        "x": "917",
+                        "y": "893",
+                        "width": "20",
+                        "height": "20",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/5a4c9034-00e0-4c24-8915-eaaf0d64b1ad.png",
+                        "focusable": true,
+                        "hover_effect": false
+                     },
+                     {
+                        "__comment__": "Main Hidden Button",
+                        "name": "Button_Main",
+                        "type": "Button",
+                        "x": "953",
+                        "y": "893",
+                        "width": "20",
+                        "height": "20",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/5a4c9034-00e0-4c24-8915-eaaf0d64b1ad.png",
+                        "autoFocus": true,
+                        "focusable": true,
+                        "guide": "right,bottom",
+                        "hover_effect": false
+                     },
+                     {
+                        "__comment__": "Right Hidden Button, will replaceStep onFocusGained",
+                        "name": "Button_Right",
+                        "type": "Button",
+                        "x": "989",
+                        "y": "893",
+                        "width": "20",
+                        "height": "20",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/5a4c9034-00e0-4c24-8915-eaaf0d64b1ad.png",
+                        "focusable": true,
+                        "hover_effect": false
+                     },
+                     {
+                        "__comment__": "Pagination QR Panel",
+                        "name": "Panel_QR",
+                        "type": "Image",
+                        "x": "0",
+                        "y": "1080",
+                        "width": "1920",
+                        "height": "1080",
+                        "image_url": "https://media.truex.com/image_assets/2020-12-02/dca8ffce-66f7-42e2-9721-e95b463129ab.png",
+                        "opacity": "1"
+                     },
+                     {
+                        "__comment__": "Bottom black gradient to make footer visible. Optional. Set opacity to 0 to disable",
+                        "name": "shade",
+                        "type": "Image",
+                        "x": "0",
+                        "y": "824",
+                        "width": "1920",
+                        "height": "256",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/c76be775-fdae-409f-ba96-c5991b38c825.png",
+                        "opacity": "1"
+                     },
+                     {
+                        "__comment__": "Main video in unit",
+                        "name": "Video_Player",
+                        "type": "Video",
+                        "x": "43.5",
+                        "y": "60",
+                        "width": "1200",
+                        "height": "675",
+                        "loop": false,
+                        "autoplay": true,
+                        "replayable": false,
+                        "fullscreen": false,
+                        "focusable": false,
+                        "can_be_focused_by_default": false,
+                        "preview_image_url": "https://media.truex.com/image_assets/2020-12-09/289466b3-533b-4790-9f2a-f6f378f5a1ee.png",
+                        "video_url": "https://media.truex.com/video_assets/2020-12-09/c15a1a58-8440-461f-91c0-01c96c775cca_ottPreset.mp4",
+                        "staticVideoImageOpacity": 1
+                     },
+                     {
+                        "__comment__": "Default Panel/Non Focused Panel-- same as main panel, but should not have anything in focus. This is overlay on top of main image when user focus on Watch Your Show footer button",
+                        "name": "Panel_Default",
+                        "type": "Image",
+                        "x": "0",
+                        "y": "960",
+                        "width": "960",
+                        "height": "1080",
+                        "image_url": "https://media.truex.com/image_assets/2020-12-22/8c1c1430-9dd8-4c75-b88a-b14ba0cef527.png",
+                        "opacity": "0"
+                     },
+                     {
+                        "__comment__": "Main Panel-- main image. Best to have 1 item in focus.",
+                        "name": "Panel_Main",
+                        "type": "Image",
+                        "x": "0",
+                        "y": "0",
+                        "width": "960",
+                        "height": "1080",
+                        "image_url": "https://media.truex.com/image_assets/2020-12-09/56ca7e22-d180-46f8-bf16-052f381e8dd2.png",
+                        "opacity": "1"
+                     },
+                     {
+                        "__comment__": "Right Panel-- for innovid right pannel",
+                        "name": "Panel_Right",
+                        "type": "Image",
+                        "x": "960",
+                        "y": "0",
+                        "width": "960",
+                        "height": "1080",
+                        "image_url": "https://media.truex.com/image_assets/2020-12-22/8c1c1430-9dd8-4c75-b88a-b14ba0cef527.png",
+                        "opacity": "1"
+                     }
+                  ],
+                  "behaviors": {
+                     "Video_Player": {
+                        "appear": [
+                           {
+                              "host": "assign",
+                              "key": "videoNotPlaying",
+                              "value": true
+                           }
+                        ],
+                        "videoStarted": [
+                           {
+                              "host": "assign",
+                              "key": "videoNotPlaying",
+                              "value": false
+                           }
+                        ],
+                        "videoCompleted": [
+                           {
+                              "host": "assign",
+                              "key": "videoNotPlaying",
+                              "value": true
+                           }
+                        ]
+                     },
+                     "Button_QR": {
+                        "onFocusGained": [
+                           {
+                              "host": "animateElement",
+                              "name": "Panel_QR",
+                              "attributes": {
+                                 "y": 0
+                              },
+                              "easeFunction": "inOutCubic",
+                              "duration": 0.25
+                           },
+                           {
+                              "target": "Video_Player",
+                              "host": "pauseVideo"
+                           }
+                        ],
+                        "onFocusLost": [
+                           {
+                              "host": "if",
+                              "expression": {
+                                 "operation": "!",
+                                 "values": [
+                                    {
+                                       "key": "videoNotPlaying"
+                                    }
+                                 ]
+                              },
+                              "then": [
+                                 {
+                                    "target": "Video_Player",
+                                    "host": "playVideo"
+                                 }
+                              ]
+                           }
+                        ],
+                        "onselect": [
+                           {
+                              "host": "focusElement",
+                              "name": "Button_Main"
+                           }
+                        ]
+                     },
+                     "Button_Main": {
+                        "onFocusGained": [
+                           {
+                              "host": "setAttribute",
+                              "name": "Panel_Default",
+                              "key": "opacity",
+                              "value": 0
+                           },
+                           {
+                              "host": "animateElement",
+                              "name": "Panel_QR",
+                              "attributes": {
+                                 "y": 1080
+                              },
+                              "easeFunction": "inOutCubic",
+                              "duration": 0.25
+                           }
+                        ],
+                        "onFocusLost": [
+                           {
+                              "host": "setAttribute",
+                              "name": "Panel_Default",
+                              "key": "opacity",
+                              "value": 1
+                           }
+                        ],
+                        "onselect": [
+                           {
+                              "host": "if",
+                              "expression": {
+                                 "key": "videoNotPlaying"
+                              },
+                              "then": [
+                                 {
+                                    "target": "Video_Player",
+                                    "host": "playVideo"
+                                 }
+                              ]
+                           }
+                        ]
+                     },
+                     "Button_Left": {
+                        "onFocusGained": [
+                           {
+                              "host": "replaceStep",
+                              "cardName": "panel_4"
+                           }
+                        ]
+                     },
+                     "Button_Right": {
+                        "onFocusGained": [
+                           {
+                              "host": "replaceStep",
+                              "cardName": "panel_2"
+                           }
+                        ]
+                     }
+                  }
+               },
+               {
+                  "name": "panel_2",
+                  "elements": [
+                     {
+                        "__comment__": "QR hidden button, will show qrcode on focus. Set focusable to false if no QR code page",
+                        "name": "Button_QR",
+                        "type": "Button",
+                        "x": "953",
+                        "y": "0",
+                        "width": "20",
+                        "height": "20",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/5a4c9034-00e0-4c24-8915-eaaf0d64b1ad.png",
+                        "focusable": true,
+                        "hover_effect": false,
+                        "leftFocus": "Button_Main",
+                        "rightFocus": "Button_Main",
+                        "downFocus": "Button_Main"
+                     },
+                     {
+                        "__comment__": "Left Hidden Button, will replaceStep onFocusGained",
+                        "name": "Button_Left",
+                        "type": "Button",
+                        "x": "917",
+                        "y": "893",
+                        "width": "20",
+                        "height": "20",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/5a4c9034-00e0-4c24-8915-eaaf0d64b1ad.png",
+                        "focusable": true,
+                        "hover_effect": false
+                     },
+                     {
+                        "__comment__": "Main Hidden Button",
+                        "name": "Button_Main",
+                        "type": "Button",
+                        "x": "953",
+                        "y": "893",
+                        "width": "20",
+                        "height": "20",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/5a4c9034-00e0-4c24-8915-eaaf0d64b1ad.png",
+                        "autoFocus": true,
+                        "focusable": true,
+                        "guide": "right,bottom",
+                        "hover_effect": false
+                     },
+                     {
+                        "__comment__": "Right Hidden Button, will replaceStep onFocusGained",
+                        "name": "Button_Right",
+                        "type": "Button",
+                        "x": "989",
+                        "y": "893",
+                        "width": "20",
+                        "height": "20",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/5a4c9034-00e0-4c24-8915-eaaf0d64b1ad.png",
+                        "focusable": true,
+                        "hover_effect": false
+                     },
+                     {
+                        "__comment__": "Pagination QR Panel",
+                        "name": "Panel_QR",
+                        "type": "Image",
+                        "x": "0",
+                        "y": "1080",
+                        "width": "1920",
+                        "height": "1080",
+                        "image_url": "https://media.truex.com/image_assets/2020-12-02/dca8ffce-66f7-42e2-9721-e95b463129ab.png",
+                        "opacity": "1"
+                     },
+                     {
+                        "__comment__": "Bottom black gradient to make footer visible. Optional. Set opacity to 0 to disable",
+                        "name": "shade",
+                        "type": "Image",
+                        "x": "0",
+                        "y": "824",
+                        "width": "1920",
+                        "height": "256",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/c76be775-fdae-409f-ba96-c5991b38c825.png",
+                        "opacity": "1"
+                     },
+                     {
+                        "__comment__": "Main video in unit",
+                        "name": "Video_Player",
+                        "type": "Video",
+                        "x": "43.5",
+                        "y": "60",
+                        "width": "1200",
+                        "height": "675",
+                        "loop": false,
+                        "autoplay": true,
+                        "replayable": false,
+                        "fullscreen": false,
+                        "focusable": false,
+                        "can_be_focused_by_default": false,
+                        "preview_image_url": "https://media.truex.com/image_assets/2020-12-09/e046d8b4-22e0-467f-888f-c47ed6aa4e80.png",
+                        "video_url": "https://media.truex.com/video_assets/2020-12-09/d3eda796-52db-4a4a-86aa-8ae667c4875e_ottPreset.mp4",
+                        "staticVideoImageOpacity": 1
+                     },
+                     {
+                        "__comment__": "Default Panel/Non Focused Panel-- same as main panel, but should not have anything in focus. This is overlay on top of main image when user focus on Watch Your Show footer button",
+                        "name": "Panel_Default",
+                        "type": "Image",
+                        "x": "0",
+                        "y": "960",
+                        "width": "960",
+                        "height": "1080",
+                        "image_url": "https://media.truex.com/image_assets/2020-12-22/8c1c1430-9dd8-4c75-b88a-b14ba0cef527.png",
+                        "opacity": "0"
+                     },
+                     {
+                        "__comment__": "Main Panel-- main image. Best to have 1 item in focus.",
+                        "name": "Panel_Main",
+                        "type": "Image",
+                        "x": "0",
+                        "y": "0",
+                        "width": "960",
+                        "height": "1080",
+                        "image_url": "https://media.truex.com/image_assets/2020-12-09/c1abd8d5-133c-4f59-b4ec-5e09d6fe05b1.png",
+                        "opacity": "1"
+                     },
+                     {
+                        "__comment__": "Right Panel-- for innovid right pannel",
+                        "name": "Panel_Right",
+                        "type": "Image",
+                        "x": "960",
+                        "y": "0",
+                        "width": "960",
+                        "height": "1080",
+                        "image_url": "https://media.truex.com/image_assets/2020-12-22/8c1c1430-9dd8-4c75-b88a-b14ba0cef527.png",
+                        "opacity": "1"
+                     }
+                  ],
+                  "behaviors": {
+                     "Video_Player": {
+                        "appear": [
+                           {
+                              "host": "assign",
+                              "key": "videoNotPlaying",
+                              "value": true
+                           }
+                        ],
+                        "videoStarted": [
+                           {
+                              "host": "assign",
+                              "key": "videoNotPlaying",
+                              "value": false
+                           }
+                        ],
+                        "videoCompleted": [
+                           {
+                              "host": "assign",
+                              "key": "videoNotPlaying",
+                              "value": true
+                           }
+                        ]
+                     },
+                     "Button_QR": {
+                        "onFocusGained": [
+                           {
+                              "host": "animateElement",
+                              "name": "Panel_QR",
+                              "attributes": {
+                                 "y": 0
+                              },
+                              "easeFunction": "inOutCubic",
+                              "duration": 0.25
+                           },
+                           {
+                              "target": "Video_Player",
+                              "host": "pauseVideo"
+                           }
+                        ],
+                        "onFocusLost": [
+                           {
+                              "host": "if",
+                              "expression": {
+                                 "operation": "!",
+                                 "values": [
+                                    {
+                                       "key": "videoNotPlaying"
+                                    }
+                                 ]
+                              },
+                              "then": [
+                                 {
+                                    "target": "Video_Player",
+                                    "host": "playVideo"
+                                 }
+                              ]
+                           }
+                        ],
+                        "onselect": [
+                           {
+                              "host": "focusElement",
+                              "name": "Button_Main"
+                           }
+                        ]
+                     },
+                     "Button_Main": {
+                        "onFocusGained": [
+                           {
+                              "host": "setAttribute",
+                              "name": "Panel_Default",
+                              "key": "opacity",
+                              "value": 0
+                           },
+                           {
+                              "host": "animateElement",
+                              "name": "Panel_QR",
+                              "attributes": {
+                                 "y": 1080
+                              },
+                              "easeFunction": "inOutCubic",
+                              "duration": 0.25
+                           }
+                        ],
+                        "onFocusLost": [
+                           {
+                              "host": "setAttribute",
+                              "name": "Panel_Default",
+                              "key": "opacity",
+                              "value": 1
+                           }
+                        ],
+                        "onselect": [
+                           {
+                              "host": "if",
+                              "expression": {
+                                 "key": "videoNotPlaying"
+                              },
+                              "then": [
+                                 {
+                                    "target": "Video_Player",
+                                    "host": "playVideo"
+                                 }
+                              ]
+                           }
+                        ]
+                     },
+                     "Button_Left": {
+                        "onFocusGained": [
+                           {
+                              "host": "replaceStep",
+                              "cardName": "panel_1"
+                           }
+                        ]
+                     },
+                     "Button_Right": {
+                        "onFocusGained": [
+                           {
+                              "host": "replaceStep",
+                              "cardName": "panel_3"
+                           }
+                        ]
+                     }
+                  }
+               },
+               {
+                  "name": "panel_3",
+                  "elements": [
+                     {
+                        "__comment__": "QR hidden button, will show qrcode on focus. Set focusable to false if no QR code page",
+                        "name": "Button_QR",
+                        "type": "Button",
+                        "x": "953",
+                        "y": "0",
+                        "width": "20",
+                        "height": "20",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/5a4c9034-00e0-4c24-8915-eaaf0d64b1ad.png",
+                        "focusable": true,
+                        "hover_effect": false,
+                        "leftFocus": "Button_Main",
+                        "rightFocus": "Button_Main",
+                        "downFocus": "Button_Main"
+                     },
+                     {
+                        "__comment__": "Left Hidden Button, will replaceStep onFocusGained",
+                        "name": "Button_Left",
+                        "type": "Button",
+                        "x": "917",
+                        "y": "893",
+                        "width": "20",
+                        "height": "20",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/5a4c9034-00e0-4c24-8915-eaaf0d64b1ad.png",
+                        "focusable": true,
+                        "hover_effect": false
+                     },
+                     {
+                        "__comment__": "Main Hidden Button",
+                        "name": "Button_Main",
+                        "type": "Button",
+                        "x": "953",
+                        "y": "893",
+                        "width": "20",
+                        "height": "20",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/5a4c9034-00e0-4c24-8915-eaaf0d64b1ad.png",
+                        "autoFocus": true,
+                        "focusable": true,
+                        "guide": "right,bottom",
+                        "hover_effect": false
+                     },
+                     {
+                        "__comment__": "Right Hidden Button, will replaceStep onFocusGained",
+                        "name": "Button_Right",
+                        "type": "Button",
+                        "x": "989",
+                        "y": "893",
+                        "width": "20",
+                        "height": "20",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/5a4c9034-00e0-4c24-8915-eaaf0d64b1ad.png",
+                        "focusable": true,
+                        "hover_effect": false
+                     },
+                     {
+                        "__comment__": "Pagination QR Panel",
+                        "name": "Panel_QR",
+                        "type": "Image",
+                        "x": "0",
+                        "y": "1080",
+                        "width": "1920",
+                        "height": "1080",
+                        "image_url": "https://media.truex.com/image_assets/2020-12-02/dca8ffce-66f7-42e2-9721-e95b463129ab.png",
+                        "opacity": "1"
+                     },
+                     {
+                        "__comment__": "Bottom black gradient to make footer visible. Optional. Set opacity to 0 to disable",
+                        "name": "shade",
+                        "type": "Image",
+                        "x": "0",
+                        "y": "824",
+                        "width": "1920",
+                        "height": "256",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/c76be775-fdae-409f-ba96-c5991b38c825.png",
+                        "opacity": "1"
+                     },
+                     {
+                        "__comment__": "Main video in unit",
+                        "name": "Video_Player",
+                        "type": "Video",
+                        "x": "43.5",
+                        "y": "60",
+                        "width": "1200",
+                        "height": "675",
+                        "loop": false,
+                        "autoplay": true,
+                        "replayable": false,
+                        "fullscreen": false,
+                        "focusable": false,
+                        "can_be_focused_by_default": false,
+                        "preview_image_url": "https://media.truex.com/image_assets/2020-12-02/075493e4-b47a-4bcb-965a-5b88ead945bb.png",
+                        "video_url": "https://media.truex.com/video_assets/2020-12-09/2c3fb02e-b860-491d-b6f6-8c884f1f0119_ottPreset.mp4",
+                        "staticVideoImageOpacity": 1
+                     },
+                     {
+                        "__comment__": "Default Panel/Non Focused Panel-- same as main panel, but should not have anything in focus. This is overlay on top of main image when user focus on Watch Your Show footer button",
+                        "name": "Panel_Default",
+                        "type": "Image",
+                        "x": "0",
+                        "y": "960",
+                        "width": "960",
+                        "height": "1080",
+                        "image_url": "https://media.truex.com/image_assets/2020-12-22/8c1c1430-9dd8-4c75-b88a-b14ba0cef527.png",
+                        "opacity": "0"
+                     },
+                     {
+                        "__comment__": "Main Panel-- main image. Best to have 1 item in focus.",
+                        "name": "Panel_Main",
+                        "type": "Image",
+                        "x": "0",
+                        "y": "0",
+                        "width": "960",
+                        "height": "1080",
+                        "image_url": "https://media.truex.com/image_assets/2020-12-09/e9049bac-0c97-480d-ad57-99e88ec306f1.png",
+                        "opacity": "1"
+                     },
+                     {
+                        "__comment__": "Right Panel-- for innovid right pannel",
+                        "name": "Panel_Right",
+                        "type": "Image",
+                        "x": "960",
+                        "y": "0",
+                        "width": "960",
+                        "height": "1080",
+                        "image_url": "https://media.truex.com/image_assets/2020-12-22/8c1c1430-9dd8-4c75-b88a-b14ba0cef527.png",
+                        "opacity": "1"
+                     }
+                  ],
+                  "behaviors": {
+                     "Video_Player": {
+                        "appear": [
+                           {
+                              "host": "assign",
+                              "key": "videoNotPlaying",
+                              "value": true
+                           }
+                        ],
+                        "videoStarted": [
+                           {
+                              "host": "assign",
+                              "key": "videoNotPlaying",
+                              "value": false
+                           }
+                        ],
+                        "videoCompleted": [
+                           {
+                              "host": "assign",
+                              "key": "videoNotPlaying",
+                              "value": true
+                           }
+                        ]
+                     },
+                     "Button_QR": {
+                        "onFocusGained": [
+                           {
+                              "host": "animateElement",
+                              "name": "Panel_QR",
+                              "attributes": {
+                                 "y": 0
+                              },
+                              "easeFunction": "inOutCubic",
+                              "duration": 0.25
+                           },
+                           {
+                              "target": "Video_Player",
+                              "host": "pauseVideo"
+                           }
+                        ],
+                        "onFocusLost": [
+                           {
+                              "host": "if",
+                              "expression": {
+                                 "operation": "!",
+                                 "values": [
+                                    {
+                                       "key": "videoNotPlaying"
+                                    }
+                                 ]
+                              },
+                              "then": [
+                                 {
+                                    "target": "Video_Player",
+                                    "host": "playVideo"
+                                 }
+                              ]
+                           }
+                        ],
+                        "onselect": [
+                           {
+                              "host": "focusElement",
+                              "name": "Button_Main"
+                           }
+                        ]
+                     },
+                     "Button_Main": {
+                        "onFocusGained": [
+                           {
+                              "host": "setAttribute",
+                              "name": "Panel_Default",
+                              "key": "opacity",
+                              "value": 0
+                           },
+                           {
+                              "host": "animateElement",
+                              "name": "Panel_QR",
+                              "attributes": {
+                                 "y": 1080
+                              },
+                              "easeFunction": "inOutCubic",
+                              "duration": 0.25
+                           }
+                        ],
+                        "onFocusLost": [
+                           {
+                              "host": "setAttribute",
+                              "name": "Panel_Default",
+                              "key": "opacity",
+                              "value": 1
+                           }
+                        ],
+                        "onselect": [
+                           {
+                              "host": "if",
+                              "expression": {
+                                 "key": "videoNotPlaying"
+                              },
+                              "then": [
+                                 {
+                                    "target": "Video_Player",
+                                    "host": "playVideo"
+                                 }
+                              ]
+                           }
+                        ]
+                     },
+                     "Button_Left": {
+                        "onFocusGained": [
+                           {
+                              "host": "replaceStep",
+                              "cardName": "panel_2"
+                           }
+                        ]
+                     },
+                     "Button_Right": {
+                        "onFocusGained": [
+                           {
+                              "host": "replaceStep",
+                              "cardName": "panel_4"
+                           }
+                        ]
+                     }
+                  }
+               },
+               {
+                  "name": "panel_4",
+                  "elements": [
+                     {
+                        "__comment__": "QR hidden button, will show qrcode on focus. Set focusable to false if no QR code page",
+                        "name": "Button_QR",
+                        "type": "Button",
+                        "x": "953",
+                        "y": "0",
+                        "width": "20",
+                        "height": "20",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/5a4c9034-00e0-4c24-8915-eaaf0d64b1ad.png",
+                        "focusable": true,
+                        "hover_effect": false,
+                        "leftFocus": "Button_Main",
+                        "rightFocus": "Button_Main",
+                        "downFocus": "Button_Main"
+                     },
+                     {
+                        "__comment__": "Left Hidden Button, will replaceStep onFocusGained",
+                        "name": "Button_Left",
+                        "type": "Button",
+                        "x": "917",
+                        "y": "893",
+                        "width": "20",
+                        "height": "20",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/5a4c9034-00e0-4c24-8915-eaaf0d64b1ad.png",
+                        "focusable": true,
+                        "hover_effect": false
+                     },
+                     {
+                        "__comment__": "Main Hidden Button",
+                        "name": "Button_Main",
+                        "type": "Button",
+                        "x": "953",
+                        "y": "893",
+                        "width": "20",
+                        "height": "20",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/5a4c9034-00e0-4c24-8915-eaaf0d64b1ad.png",
+                        "autoFocus": true,
+                        "focusable": true,
+                        "guide": "right,bottom",
+                        "hover_effect": false
+                     },
+                     {
+                        "__comment__": "Right Hidden Button, will replaceStep onFocusGained",
+                        "name": "Button_Right",
+                        "type": "Button",
+                        "x": "989",
+                        "y": "893",
+                        "width": "20",
+                        "height": "20",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/5a4c9034-00e0-4c24-8915-eaaf0d64b1ad.png",
+                        "focusable": true,
+                        "hover_effect": false
+                     },
+                     {
+                        "__comment__": "Pagination QR Panel",
+                        "name": "Panel_QR",
+                        "type": "Image",
+                        "x": "0",
+                        "y": "1080",
+                        "width": "1920",
+                        "height": "1080",
+                        "image_url": "https://media.truex.com/image_assets/2020-12-02/dca8ffce-66f7-42e2-9721-e95b463129ab.png",
+                        "opacity": "1"
+                     },
+                     {
+                        "__comment__": "Bottom black gradient to make footer visible. Optional. Set opacity to 0 to disable",
+                        "name": "shade",
+                        "type": "Image",
+                        "x": "0",
+                        "y": "824",
+                        "width": "1920",
+                        "height": "256",
+                        "image_url": "https://media.truex.com/image_assets/2020-10-02/c76be775-fdae-409f-ba96-c5991b38c825.png",
+                        "opacity": "1"
+                     },
+                     {
+                        "__comment__": "Main video in unit",
+                        "name": "Video_Player",
+                        "type": "Video",
+                        "x": "43.5",
+                        "y": "60",
+                        "width": "1200",
+                        "height": "675",
+                        "loop": false,
+                        "autoplay": true,
+                        "replayable": false,
+                        "fullscreen": false,
+                        "focusable": false,
+                        "can_be_focused_by_default": false,
+                        "preview_image_url": "https://media.truex.com/image_assets/2020-12-02/81c9a992-8b78-45d5-b97c-f24d450b1d31.png",
+                        "video_url": "https://media.truex.com/video_assets/2020-12-09/46017456-2133-44bf-a307-3a68d13bc881_ottPreset.mp4",
+                        "staticVideoImageOpacity": 1
+                     },
+                     {
+                        "__comment__": "Default Panel/Non Focused Panel-- same as main panel, but should not have anything in focus. This is overlay on top of main image when user focus on Watch Your Show footer button",
+                        "name": "Panel_Default",
+                        "type": "Image",
+                        "x": "0",
+                        "y": "960",
+                        "width": "960",
+                        "height": "1080",
+                        "image_url": "https://media.truex.com/image_assets/2020-12-22/b91910d8-32bc-4880-99b5-41cdbc68270e.png",
+                        "opacity": "0"
+                     },
+                     {
+                        "__comment__": "Main Panel-- main image. Best to have 1 item in focus.",
+                        "name": "Panel_Main",
+                        "type": "Image",
+                        "x": "0",
+                        "y": "0",
+                        "width": "960",
+                        "height": "1080",
+                        "image_url": "https://media.truex.com/image_assets/2020-12-09/dd9bb6ee-0c25-4a05-a600-3c816eee57f7.png",
+                        "opacity": "1"
+                     },
+                     {
+                        "__comment__": "Right Panel-- for innovid right pannel",
+                        "name": "Panel_Right",
+                        "type": "Image",
+                        "x": "960",
+                        "y": "0",
+                        "width": "960",
+                        "height": "1080",
+                        "image_url": "https://media.truex.com/image_assets/2020-12-22/b91910d8-32bc-4880-99b5-41cdbc68270e.png",
+                        "opacity": "1"
+                     }
+                  ],
+                  "behaviors": {
+                     "Video_Player": {
+                        "appear": [
+                           {
+                              "host": "assign",
+                              "key": "videoNotPlaying",
+                              "value": true
+                           }
+                        ],
+                        "videoStarted": [
+                           {
+                              "host": "assign",
+                              "key": "videoNotPlaying",
+                              "value": false
+                           }
+                        ],
+                        "videoCompleted": [
+                           {
+                              "host": "assign",
+                              "key": "videoNotPlaying",
+                              "value": true
+                           }
+                        ]
+                     },
+                     "Button_QR": {
+                        "onFocusGained": [
+                           {
+                              "host": "animateElement",
+                              "name": "Panel_QR",
+                              "attributes": {
+                                 "y": 0
+                              },
+                              "easeFunction": "inOutCubic",
+                              "duration": 0.25
+                           },
+                           {
+                              "target": "Video_Player",
+                              "host": "pauseVideo"
+                           }
+                        ],
+                        "onFocusLost": [
+                           {
+                              "host": "if",
+                              "expression": {
+                                 "operation": "!",
+                                 "values": [
+                                    {
+                                       "key": "videoNotPlaying"
+                                    }
+                                 ]
+                              },
+                              "then": [
+                                 {
+                                    "target": "Video_Player",
+                                    "host": "playVideo"
+                                 }
+                              ]
+                           }
+                        ],
+                        "onselect": [
+                           {
+                              "host": "focusElement",
+                              "name": "Button_Main"
+                           }
+                        ]
+                     },
+                     "Button_Main": {
+                        "onFocusGained": [
+                           {
+                              "host": "setAttribute",
+                              "name": "Panel_Default",
+                              "key": "opacity",
+                              "value": 0
+                           },
+                           {
+                              "host": "animateElement",
+                              "name": "Panel_QR",
+                              "attributes": {
+                                 "y": 1080
+                              },
+                              "easeFunction": "inOutCubic",
+                              "duration": 0.25
+                           }
+                        ],
+                        "onFocusLost": [
+                           {
+                              "host": "setAttribute",
+                              "name": "Panel_Default",
+                              "key": "opacity",
+                              "value": 1
+                           }
+                        ],
+                        "onselect": [
+                           {
+                              "host": "if",
+                              "expression": {
+                                 "key": "videoNotPlaying"
+                              },
+                              "then": [
+                                 {
+                                    "target": "Video_Player",
+                                    "host": "playVideo"
+                                 }
+                              ]
+                           }
+                        ]
+                     },
+                     "Button_Left": {
+                        "onFocusGained": [
+                           {
+                              "host": "replaceStep",
+                              "cardName": "panel_3"
+                           }
+                        ]
+                     },
+                     "Button_Right": {
+                        "onFocusGained": [
+                           {
+                              "host": "replaceStep",
+                              "cardName": "panel_1"
+                           }
+                        ]
+                     }
+                  }
+               }
+            ]
+         },
+         "pending_true_targeting_requirements": [],
+         "service_url": "measure.truex.com",
+         "service_params": "bid_info=0-fNGntYZJrGp-4RTgfEMkwAhDKkg88khkfgaZ42cpLGviXeXTfRViCacfuQt75JP6THFVatVL2J1K8p3mZVBVro23B4Qm3SABJVFkdQauJC5ZFbpnbvnLkn4HfacikpHedTtmWqfwJBpkpUajT1Tmoda23doRb9KgDBxpWtmdDPrx5rDeudLHe3m6NkT5HhQZJNCxTQWQaonxpww3LRLFSc4hSeRvNFX2bUmT7fXrLuVVeAPXXY3qaZtotdSvk&campaign_id=25775&creative_id=20975&currency_amount=1&flag=%2Bamcb%2Bemcr%2Bslcb%2Bvicb%2Baeti-exvt&impression_signature=91469b3f64760e91359a7892518733b47fc96f99eeb28a9fe6653eac3bd58bbb&impression_timestamp=1659476286.7151043&internal_referring_source=u-Ii_RwPS9SjnYLm5ppzzA&ip=24.85.14.83&metr=0&multivariate%5BFAP-460%5D=oldTT&multivariate%5Bctv_footer_test%5D=T0&multivariate%5Bctv_footer_test_a744dee4c7908c475fd3920ac6616470c4317e8c%5D=T0&multivariate%5Bctv_footer_test_dbd6f9f154dc39f9fc4888317c6e3c9d74f7c971%5D=T0&multivariate%5Bctv_relevance_enabled%5D=T0&multivariate%5Btruex_first_experiment%5D=control&multivariate%5Btvml_cc_test%5D=control&network_user_id=5a4e75d1-2e85-5b2d-97b9-6e4244c90b86&optimized=true&placement_hash=74fca63c733f098340b0a70489035d683024440d&prof=g_as3_truex&ptgt=a&resp=vmap1&session_id=DBQksMsbTLOMTT9ySEvh-w&slid=fw_truex&stream_position=preroll&vault=0-y9TfmKedW5o-978o2sazBAijxr62mGSqzpGyKdWqJ5T297KX7d3uHMfdNDQyvkNEhxfJM4qRAvLg8gaZaKUVcUAGpvUp8s9CD9S5HPhYufSU4EFj4zPEqj5zwBjaWqGDJFxamGjHACXAR3B6YUsLXRtopxokwhdKN77C8L1uecXVjGa3jwmAHjgcRit"
+      }
+   ],
+   "vast_session_id": "EfMcuicjRdyAPHFw1KGhwQ",
+   "ad_free_creative_url": "https://media.truex.com/m/video/truexloadingplaceholder-QA-30s.mp4",
+   "card_creative_url": "https://media.truex.com/m/video/truexloadingplaceholder-QA-30s.mp4",
+   "card_creative_args": null,
+   "card_configurations": [
+      {
+         "sk": "",
+         "sec": "30",
+         "bg": "http://media.truex.com/image_assets/optimized/2021-07-28/1455def7e63374b3a74e2ae28a951e49.png",
+         "ib": "http://media.truex.com/image_assets/optimized/2021-07-28/1600cde740892ccb70d6f3068a512a65.png",
+         "iw": 489,
+         "ih": 850,
+         "wb": "http://media.truex.com/image_assets/optimized/2021-07-28/5003dd14691d229a4a23abccfbd09e61.png",
+         "ww": 489,
+         "wh": 850,
+         "aa": 30,
+         "bd": "",
+         "n": "",
+         "f": "",
+         "vo": "http://media.truex.com/audio_assets/optimized/2021-05-19/1e818f2d72a60cd25e3f67c4b3162fce.mp3",
+         "pos": "preroll",
+         "ix": 148,
+         "iy": 190,
+         "wx": 644,
+         "wy": 190,
+         "product": "sponsored_stream",
+         "ct": "0:[countdown]",
+         "ctx": 70,
+         "cty": 70,
+         "ctw": 150,
+         "cth": 64,
+         "cts": 32,
+         "ctc": "0xeeeeeeff",
+         "ctf": "LargeBoldSystemFont"
+      }
+   ],
+   "choice_card_images": [],
+   "passback_tags": [],
+   "validation_pixels": []
+}
