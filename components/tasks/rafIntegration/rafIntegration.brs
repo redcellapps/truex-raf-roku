@@ -72,9 +72,13 @@ sub playContentWithRAF()
     video = m.top.video
 
     if adPods <> invalid and adPods.count() > 0 then
+        ?"****** rafIntegration ****** playContentWithRAF() -----> adPods: "; adPods
         m.top.keepPlaying = adIface.showAds(adPods, invalid, renderView)
     end if
 
+    ?"****** rafIntegration ****** playContentWithRAF() -----> adPods: "; adPods
+    ?"****** rafIntegration ****** playContentWithRAF() -----> adPods: "; adPods
+    
     port = CreateObject("roMessagePort")
 
     if m.top.keepPlaying then
@@ -111,6 +115,7 @@ sub playContentWithRAF()
                         'ask the video to stop - the rest is handled in the state=stopped event below
                         video.control = "stop"
                     end if
+                    stop
                 end if
 
 
@@ -149,6 +154,8 @@ sub playContentWithRAF()
                     video.control = "stop"
                 end if
             end if
+            stop
+
         end if
     end while
 

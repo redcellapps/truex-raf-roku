@@ -134,6 +134,8 @@
     height = "0"
     wrap = "true"/>   
 
+  <Group id="adFacade" />
+
   <Timer
     id = "seekTimer"
     repeat  = "true"

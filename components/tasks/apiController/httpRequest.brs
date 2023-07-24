@@ -48,7 +48,7 @@ end sub
 function urlProxy(url as string) as string
   if left(url, 4) <> "http" then return url
   ' This address is <HOST_RUNNING_CHARLES>:<CHARLES_PORT>
-  proxyAddress = "192.168.0.113:8888"
+  proxyAddress = "192.168.0.111:8888"
 
   ' Make sure we have not already formatted this url
   ' This can lead to a recursive address

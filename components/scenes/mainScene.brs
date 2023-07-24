@@ -22,6 +22,7 @@ sub init()
     m.deepLinkingTask.observefield("deeplinkData", "handleDeepLinkEvents")
     m.deepLinkingTask.control = "run"
 
+    m.global.streamInfo = invalid
     ' listen for Truex library load events
     m.tarLibrary = m.top.findNode("TruexAdRendererLib")
     m.tarLibrary.observeField("loadStatus", "onTruexLibraryLoadStatusChanged")
@@ -31,7 +32,6 @@ sub onTruexLibraryLoadStatusChanged(event as Object)
     ' make sure tarLibrary has been initialized
     if m.tarLibrary = invalid then return
         ? "****** TRUE[X] >>>  MainScene::onTruexLibraryLoadStatusChanged ----> loadStatus: "; m.tarLibrary.loadStatus
-
     ' check the library's loadStatus
     if m.tarLibrary.loadStatus = "none" then
         ? "TRUE[X] >>> TruexAdRendererLib is not currently being downloaded"
@@ -48,7 +48,6 @@ sub onTruexLibraryLoadStatusChanged(event as Object)
         ? "TRUE[X] >>> TruexAdRendererLib loadStatus unrecognized, ignoring"
     end if
 end sub
-
 
 '============ HANDLE DEEP LINK EVENTS ============='
 sub handleDeepLinkEvents(pEvent as dynamic)
@@ -81,26 +80,6 @@ sub getConfigData()
 
     m.configController = configController()
     m.configController.getConfigFile("onGeconfigFile")
-end sub
-
-'---------------------------------------------------------------------------------------
-' Starts a background task that fetches video stream configuration from known endpoint.
-'---------------------------------------------------------------------------------------
-sub fetchStreamInfo()
-    ? "TRUE[X] >>> LoadingFlow::fetchStreamInfo()"
-    response = ReadAsciiFile("pkg:/res/reference-app-streams.json").trim()
-    ' response = ReadAsciiFile("pkg:/res/adpods/vmap-truex.xml")
-
-    ' if response.Len() > 0 then return response else return ""
-    setGlobal("streamInfo", response)
-
-    ' if m.fetchStreamTask = invalid then
-    '     m.fetchStreamTask = CreateObject("roSGNode", "FetchStreamInfoTask")
-    '     m.fetchStreamTask.ObserveField("streamInfo", "onStreamInfo")
-    '     ' Update the following uri to host this stream definition remotely.
-    '     m.fetchStreamTask.uri = "pkg:/res/reference-app-streams.json"
-    '     m.fetchStreamTask.control = "run"
-    ' end if
 end sub
 
 '========== ON GET CONFIG DATA ==========
@@ -147,7 +126,6 @@ function completeInitView() as boolean
         return true
     end if 
 
-    fetchStreamInfo()
     selectMenuItem()
     
     return true
